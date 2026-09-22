@@ -128,6 +128,25 @@ This demonstration creates one session that returns `CodeChangeResult`, closes
 that session, and passes only the validated object into a fresh validation
 session.
 
+### 8. Fan out across issues and fan in to one recommendation
+
+Install `examples/agent-factory/fan-out-fan-in.extension.mjs` in a compatible
+test project as `.github/extensions/fan-out-fan-in/extension.mjs`, then run:
+
+```bash
+COPILOT_FACTORY_PROJECT=/absolute/path/to/test-project \
+  npm run example:fan-out
+```
+
+The factory launches one structured analyst per eligible issue with
+`ctx.parallel()`. A final prioritizer agent receives the collected results and
+selects one issue. The factory caps input at five issues, runs at most three
+sub-agents concurrently, and treats issue text as untrusted data.
+
+Use `ctx.parallel()` for an explicit fan-out/fan-in barrier. Fleet mode is more
+appropriate when the parent agent should dynamically determine the work split;
+`ctx.pipeline()` is for processing each item through successive stages.
+
 ## Architecture notes
 
 - [Issue-to-Code-to-CI architecture](docs/architecture.md)

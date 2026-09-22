@@ -12,7 +12,8 @@
     "example:triage": "tsx scripts/03-triage-github-issues.ts",
     "example:agent": "tsx scripts/04-custom-agent.ts",
     "example:factory": "tsx scripts/05-run-agent-factory.ts",
-    "example:handoff": "tsx scripts/06-multi-session-handoff.ts"
+    "example:handoff": "tsx scripts/06-multi-session-handoff.ts",
+    "example:fan-out": "tsx scripts/07-fan-out-fan-in.ts"
   },
   "dependencies": {
     "@github/copilot-sdk": "1.0.14",
