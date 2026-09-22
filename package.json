@@ -1,0 +1,29 @@
+{
+  "name": "copilot-sdk-workflow-examples",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Runnable GitHub Copilot SDK examples for skills, agents, factories, structured output, and multi-session workflows.",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "example:models": "tsx scripts/00-list-models.ts",
+    "example:skills": "tsx scripts/01-discover-skills.ts",
+    "example:invoke-skill": "tsx scripts/02-invoke-skill.ts",
+    "example:triage": "tsx scripts/03-triage-github-issues.ts",
+    "example:agent": "tsx scripts/04-custom-agent.ts",
+    "example:factory": "tsx scripts/05-run-agent-factory.ts",
+    "example:handoff": "tsx scripts/06-multi-session-handoff.ts"
+  },
+  "dependencies": {
+    "@github/copilot-sdk": "1.0.14",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}
