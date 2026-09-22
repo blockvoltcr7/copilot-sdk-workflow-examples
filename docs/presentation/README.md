@@ -7,6 +7,7 @@ Copilot SDK from developer and QA perspectives.
 
 - [Editable PowerPoint](copilot-sdk-innovation-week-knowledge-transfer.pptx)
 - [PDF preview](copilot-sdk-innovation-week-knowledge-transfer.pdf)
+- [Editable presenter guide](copilot-sdk-presentation-presenter-guide.docx)
 
 ## Topics
 
@@ -21,3 +22,7 @@ Copilot SDK from developer and QA perspectives.
 
 The deck contains speaker notes and is designed for an approximately 20-minute
 knowledge-transfer session.
+
+The presenter guide provides a 25-minute run of show, suggested talk track,
+progressive TypeScript walkthrough, demo checklist, and source links. Adjust
+the timing to match the meeting slot.
