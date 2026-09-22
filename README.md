@@ -151,6 +151,7 @@ appropriate when the parent agent should dynamically determine the work split;
 
 - [Issue-to-Code-to-CI architecture](docs/architecture.md)
 - [Security and trust boundaries](docs/security.md)
+- [Innovation Week knowledge-transfer presentation](docs/presentation/README.md)
 
 ## Roadmap
 
